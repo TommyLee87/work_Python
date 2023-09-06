@@ -9,10 +9,10 @@ else:
     print(f"오전 {hour:02}시 {min:02}분 {sec:02}초")
 
 # 2. 3개의 정수를 입력 받아 최대값과 최소값 구하기
-
-num1 = input("첫번째 정수 입력 : ")
-num2 = input("두번째 정수 입력 : ")
-num3 = input("세번째 정수 입력 : ")
+# num1, num2, num3 = map(int, input("정수 입력 : ").split())
+num1 = int(input("첫번째 정수 입력 : "))
+num2 = int(input("두번째 정수 입력 : "))
+num3 = int(input("세번째 정수 입력 : "))
 
 if num1 > num2:
     if num1 > num3:
@@ -60,8 +60,9 @@ else:
     age = curr_year - 2000 - year + 1
 print(f"나이 : {age}")
 
-# 4. 갯수가 정해지지않은 여러개의 정수를 입력 받아 합계와 평균 구하기
+# 4. 갯수가 정해지지 않은 여러 개의 정수를 입력 받아 합계와 평균 구하기
 # list 사용
-score = list(map(int, input("정수 입력 : ").split()))
+score = list(map(int, input("점수 입력 : ").split()))
+print(score)
 print(f"총점 : {sum(score)}")
 print(f"평균 : {sum(score)/len(score)}")
