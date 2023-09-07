@@ -24,7 +24,7 @@ else :
 # 근무 시간을 입력 하세요 :
 # 입력한 시간 동안 주간 또는 야간 급여는 ___원 입니다.
 
-day_or_night = int(input("주간 근무[1], 야간 근무[2]를 입력하세요 : "))
+day_or_night = int(input("주간 근무 = [1] | 야간 근무 = [2]를 입력하세요 : "))
 work_time = int(input("근무 시간을 입력하세요 : "))
 
 if day_or_night == 1 :
