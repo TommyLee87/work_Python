@@ -16,25 +16,25 @@ num3 = int(input("세번째 정수 입력 : "))
 
 if num1 > num2:
     if num1 > num3:
-        print("최대값 : " + num1)
+        print(f"최대값 : {num1}")
     else:
-        print("최대값 : " + num3)
+        print(f"최대값 : {num3}")
 else:
     if num2 > num3:
-        print("최대값 : " + num2)
+        print(f"최대값 : {num2}")
     else:
-        print("최대값 : " + num3)
+        print(f"최대값 : {num3}")
 
 if num1 < num2:
     if num1 < num3:
-        print("최소값 : " + num1)
+        print(f"최소값 : {num1}")
     else:
-        print("최소값 : " + num3)
+        print(f"최소값 : {num3}")
 else:
     if num2 < num3:
-        print("최소값 : " + num2)
+        print(f"최소값 : {num2}")
     else:
-        print("최소값 : " + num3)
+        print(f"최소값 : {num3}")
 
 # 3. 주민등록번호를 입력받아 생년월일, 성별, 나이 출력하기
 from datetime import datetime
