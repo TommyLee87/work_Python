@@ -32,7 +32,7 @@ if day_or_night == 1 :
     pay = work_time * 9620
 else:
     day_or_night = "야간"
-    pay = work_time * 9620 * 1.5
+    pay = int(work_time * 9620 * 1.5)
 
 print(f"당신의 {day_or_night} 근무 {work_time}시간에 대한 급여는 {pay}원 입니다.")
 
