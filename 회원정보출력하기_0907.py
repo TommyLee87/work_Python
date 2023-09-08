@@ -88,8 +88,8 @@ member_info = "member.txt"
 fd = open(member_info, "wt", encoding="utf-8")  # encoding="utf-8"  한글로 저장
 
 while True:
-    name = input("이름을 입력하세요 (종료하려면 quit) : ")
-    if name == "quit":
+    name = input("이름을 입력하세요 (종료하려면 Q) : ")
+    if name == "Q" or name == "q":
         break
     age = input_age()
     gender = input_gender()
