@@ -20,6 +20,7 @@ print(s1 & s2)
 print(s1.difference(s2))
 print(s1 - s2)
 
+# 로또
 import random
 nums = set()
 while True:
