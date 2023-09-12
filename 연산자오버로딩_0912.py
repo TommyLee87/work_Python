@@ -17,4 +17,4 @@ print(100 * 200)
 print(100.1 * 200.1)
 v3 = v1 * v2
 v4 = v1 + 100
-print(v4.x, v4.y)
+print(v3.x, v3.y)
