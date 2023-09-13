@@ -22,10 +22,10 @@ num = list(map(int, input("정수 입력 : ").split()))
 print(f"최대값 : {max(num)}")
 print(f"최소값 : {min(num)}")
 print(f"합계 : {sum(num)}")
-print(f"평균 : {sum(num)/len(num)}")
+print(f"평균 : {sum(num) / len(num)}")
 print(f" 몫과 나머지 : {divmod(sum(num), len(num))}")
 
 # 정렬
-my_list = [1,2,3,44,55,5,66,7,77,888,99,999]
+my_list = [1, 2, 3, 44, 55, 5, 66, 7, 77, 888, 99, 999]
 print(sorted(my_list))
 print(sorted(my_list, reverse=True))
