@@ -26,9 +26,9 @@ import os
 cwd = os.getcwd()  # 현재 작업 디렉토리
 print("현재 작업 디렉토리 : ", cwd)
 # 디렉토리 생성
-is_dir = os.path.isdir("testDir")
+is_dir = os.path.isdir("../testDir")
 if not is_dir:
-    os.mkdir("testDir")  # 디렉토리 생성
+    os.mkdir("../testDir")  # 디렉토리 생성
 is_file = os.path.isfile("score.txt")
 print(is_file)
 

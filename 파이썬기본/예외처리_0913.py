@@ -15,7 +15,7 @@
 #     print("프로그램 실행 완료!!")
 
 try:
-    score_file = open("score.txt","r", encoding="utf-8")
+    score_file = open("score.txt", "r", encoding="utf-8")
     print(score_file.read())
     score_file.close()
 except FileNotFoundError:
