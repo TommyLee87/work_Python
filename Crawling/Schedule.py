@@ -15,7 +15,7 @@ def job():
     perform_web_crawling()
 
 #매일 정해진 시간에 동작 하도록 구현
-schedule.every().day.at("09:44").do(job)
+schedule.every().day.at("12:42").do(job)
 
 while True:
     schedule.run_pending()
