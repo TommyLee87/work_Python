@@ -1,5 +1,7 @@
 from movie_api import get_movie_api
 import json
+import schedule
+import time
 
 def get_api_extract_info():
     result_data = get_movie_api()
@@ -52,12 +54,14 @@ def get_api_extract_info():
     return json.dumps(extracted_info_list, ensure_ascii=False, indent=4)
 
 
-if __name__ == '__main__':
-    result = get_api_extract_info()
-    if result:
-        print(result)
+def movie_api_send():
+    print("movie_api 정보를 전송합니다.")
+    get_api_extract_info()
 
+#매일 정해진 시간에 동작 하도록 구현
+schedule.every().day.at("12:51").do(movie_api_send)
 
-
-
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
